@@ -1,6 +1,6 @@
-def main():
-    print("Hello from new!")
+from flask import flask
+app = Flask(_name_)
 
-
-if __name__ == "__main__":
-    main()
+@app.route("/")
+def hello_word():
+    return "<p>Heloo, World</p>"
